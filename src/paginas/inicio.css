@@ -689,7 +689,6 @@
         position: relative;
         width: 100%;
         padding: 40px 5%;
-        background-color: #121315;
         box-sizing: border-box;
         display: flex;
         align-items: start;
@@ -780,6 +779,10 @@
 
     .listado-caracteristicas li {
         margin-bottom: 20px;
+        width: 80%;
+    }
+    .listado-caracteristicas li>div{
+        width: 100%;
     }
 
     .info-part-2 {

@@ -10,7 +10,7 @@ export default function Inicio() {
     const sectionRefs = useRef<any>([]);
     const [titulo, setTitulo] = useState('Agencia de turismo en el Tolima');
     const [descripcion, setDescripcion] = useState('Cotiza o contactanos, tambien puedes seleccionar alguno de nuestros próximos destinos para ver más información acerca de ellos');
-    const [fondo, setFondo] = useState('fondo1.jpg');
+    const [fondo, setFondo] = useState('fondo1.webp');
     const [ide, setIde] = useState(0);
 
     useEffect(() => {
@@ -119,25 +119,25 @@ export default function Inicio() {
             id: 1,
             titulo: '¡Vamos al Nevado del Tolima!',
             descripcion: 'Vive la facinante experiencia de llegar hasta la cumbre del nevado del tolima con guias especializados y toda la seguridad para que distrutes tu experiencia',
-            imagen: 'fondo1.jpg'
+            imagen: 'fondo1.webp'
         },
         {
             id: 2,
             titulo: '¡Viajemos a murillo en moto!',
             descripcion: 'Vive la facinante experiencia de llegar hasta la cumbre del nevado del tolima con guias especializados y toda la seguridad para que distrutes tu experiencia',
-            imagen: 'fondo2.jpg'
+            imagen: 'fondo2.webp'
         },
         {
             id: 3,
             titulo: '¡Vamos a escalar y a aprender!',
             descripcion: 'Vive la facinante experiencia de llegar hasta la cumbre del nevado del tolima con guias especializados y toda la seguridad para que distrutes tu experiencia',
-            imagen: 'fondo3.jpg'
+            imagen: 'fondo3.webp'
         },
         {
             id: 4,
             titulo: '¡Caminemos por lugares mágicos!',
             descripcion: 'Vive la facinante experiencia de llegar hasta la cumbre del nevado del tolima con guias especializados y toda la seguridad para que distrutes tu experiencia',
-            imagen: 'fondo4.jpg'
+            imagen: 'fondo4.webp'
         }
     ]
 
@@ -253,7 +253,7 @@ export default function Inicio() {
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="/imagenes/cliente2.jpg" alt="Cliente de Jukumari" />
+                                    <img src="/imagenes/cliente2.webp" alt="Cliente de Jukumari" />
                                     <div>
                                         <strong>July y Juan</strong>
                                         <p>
@@ -262,7 +262,7 @@ export default function Inicio() {
                                     </div>
                                 </li>
                                 <li>
-                                    <img src="/imagenes/cliente3.jpg" alt="Cliente de Jukumari" />
+                                    <img src="/imagenes/cliente3.webp" alt="Cliente de Jukumari" />
                                     <div>
                                         <strong>July y Juan</strong>
                                         <p>

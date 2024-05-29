@@ -81,7 +81,7 @@ export default function MenuNavigation() {
                         offset={-40}
                         duration={1000}
                         onClick={() => { setMenu(!menu) }}>
-                        Reservar
+                        Contacto
                     </Link>
                 </li>
             </ul>

@@ -177,7 +177,7 @@ export default function Inicio() {
                                 duration={1000}>
                                 Cotiza ahora <span className="icono-boton"><IconChecklist /></span>
                             </Link>
-                            <button onClick={() => { window.location.href = "https://api.whatsapp.com/send?phone=573170721473&text=Quiero%20una%20asesoría" }} className="btn btn-orange">Contáctanos <span className="icono-boton"><IconBrandWhatsapp /></span></button>
+                            <button onClick={() => { window.location.href = "https://api.whatsapp.com/send?phone=57324 8231026&text=Quiero%20cotizar%20un%20viaje" }} className="btn btn-orange">Contáctanos <span className="icono-boton"><IconBrandWhatsapp /></span></button>
                         </div>
                     </div>
                     <div className="telefono-img">
@@ -337,9 +337,9 @@ export default function Inicio() {
                         <p>Encuentranos en nuestras redes sociales o escríbenos un mensaje a nuestro chat de Whatsapp</p>
                         <div className="iconos-redes">
                             <div className="facebook" onClick={() => { window.location.href = "https://www.facebook.com/andromedacreat" }}><span><IconBrandFacebook /></span></div>
-                            <div className="instagram" onClick={() => { window.location.href = "https://www.instagram.com/creativeandromeda/" }}><span><IconBrandInstagram /></span></div>
+                            <div className="instagram" onClick={() => { window.location.href = "https://www.instagram.com/jukumariadventure/" }}><span><IconBrandInstagram /></span></div>
                             <div className="whatsapp" onClick={() => { window.location.href = "https://api.whatsapp.com/send?phone=57324 8231026&text=Quiero%20cotizar%20un%20viaje" }}><span><IconBrandWhatsapp /></span></div>
-                            <div className="tiktok" onClick={() => { window.location.href = "https://www.tiktok.com/@jeisonay?_t=8mhfSYi2rgL&_r=1" }}><span><IconBrandTiktok /></span></div>
+                            <div className="tiktok" onClick={() => { window.location.href = "https://www.tiktok.com/@jukumariadventure" }}><span><IconBrandTiktok /></span></div>
                         </div>
                     </div>
                 </section>

@@ -175,7 +175,7 @@ export default function Inicio() {
                                 smooth={true}
                                 offset={-40}
                                 duration={1000}>
-                                Cotiza ahora <span className="icono-boton"><IconChecklist /></span>
+                                Reserva ahora <span className="icono-boton"><IconChecklist /></span>
                             </Link>
                             <button onClick={() => { window.location.href = "https://api.whatsapp.com/send?phone=57324 8231026&text=Quiero%20cotizar%20un%20viaje" }} className="btn btn-orange">Contáctanos <span className="icono-boton"><IconBrandWhatsapp /></span></button>
                         </div>

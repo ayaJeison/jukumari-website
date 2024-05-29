@@ -755,7 +755,7 @@
         box-sizing: border-box;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         margin-top: 90px;
     }
 
@@ -822,6 +822,10 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+    .infp21 ul li p{
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
 
     .infp21 ul li span {
         margin-top: 10px;
@@ -842,24 +846,6 @@
         height: 150px;
         border-radius: 10px;
         object-fit: cover;
-    }
-
-    .texto-c {
-        position: relative;
-        width: calc(100% - 100px);
-        height: 150px;
-        border-radius: 10px;
-        background-color: #FAE05E;
-        box-sizing: border-box;
-        padding: 20px;
-        color: #121315;
-        font-size: 0.9rem;
-        text-align: left;
-        line-height: 0.9rem
-    }
-
-    .otroc {
-        background-color: #B4F6D0;
     }
 
     .pruebalo {
@@ -892,6 +878,10 @@
         box-sizing: border-box;
         padding: 5%;
         text-align: center;
+    }
+    .conoce ul{
+        width: 100%;
+        flex-direction: column;
     }
 
     /*Contacto*/

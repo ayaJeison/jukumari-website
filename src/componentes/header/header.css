@@ -1,0 +1,201 @@
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 5%;
+    z-index: 999;
+    transition: all 0.4s ease-in;
+    background-color: white;
+}
+.opac{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+.header img {
+    width: 300px;
+    position: relative;
+    transition: all 0.4s ease-in;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+    height: 30px;
+}
+
+.header ul li {
+    list-style: none;
+    color: black;
+    padding: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+.header ul li:last-child {
+    padding: 20px 0 20px 20px;
+}
+
+@keyframes scala {
+    0% {
+        scale: 1;
+        opacity: 1;
+    }
+
+    100% {
+        scale: 2;
+        opacity: 0;
+    }
+}
+
+.header ul:hover>li:not(:hover) {
+    opacity: 0.5;
+}
+
+/*El botón de iniciar sesión que aparece y no aparece*/
+.apa {
+    display: none !important;
+}
+.toggle{
+    display: none;
+}
+#checkbox {
+    display: none;
+}
+@media only screen and (max-width: 765px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 90px;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        justify-content: space-between;
+        padding: 0 10%;
+        z-index: 20;
+        transition: all 0.4s ease-in;
+    }
+    .noapa {
+        display: none !important;
+    }
+
+    .apa {
+        display: block !important;
+    }
+
+    header .menu {
+        box-sizing: border-box;
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0;
+    }
+    header .menudos{
+        width: 100%;
+        opacity: 1;
+        background:white;
+    }
+    .header .menudos li{
+        scale: 1;
+        transition: all 1s ease;
+    }
+    .header ul li:last-child {
+        padding: 20px;
+    }
+    .header .menu li {
+        font-size: 1.5rem;
+    }
+
+    .header img {
+        width: 40%;
+    }
+
+    .toggle {
+        position: relative;
+        width: 35px;
+        cursor: pointer;
+        display: block;
+        height: calc(4px * 3 + 11px * 2);
+    }
+
+    .bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 4px;
+        border-radius: calc(4px / 2);
+        background: black;
+        color: inherit;
+        opacity: 1;
+        transition: none 0.35s cubic-bezier(.5, -0.35, .35, 1.5) 0s;
+    }
+
+    /***** Spin Animation *****/
+
+    .bar--top {
+        bottom: calc(50% + 8px + 4px/ 2);
+        transition-property: bottom, transform;
+        transition-delay: calc(0s + 0.35s), 0s;
+    }
+
+    .bar--middle {
+        top: calc(50% - 4px/ 2);
+        transition-property: opacity;
+        transition-delay: calc(0s + 0.35s);
+    }
+
+    .bar--bottom {
+        top: calc(50% + 8px + 4px/ 2);
+        transition-property: top, transform;
+        transition-delay: calc(0s + 0.35s), 0s;
+    }
+
+    #checkbox:checked+.toggle .bar--top {
+        bottom: calc(50% - 4px/ 2);
+        transform: rotate(135deg);
+        transition-delay: 0s, calc(0s + 0.35s);
+    }
+
+    #checkbox:checked+.toggle .bar--middle {
+        opacity: 0;
+        transition-duration: 0s;
+        transition-delay: calc(0s + 0.35s);
+    }
+
+    #checkbox:checked+.toggle .bar--bottom {
+        top: calc(50% - 4px/ 2);
+        transform: rotate(225deg);
+        transition-delay: 0s, calc(0s + 0.35s);
+    }
+}
